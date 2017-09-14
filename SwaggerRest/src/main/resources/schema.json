@@ -1,0 +1,33 @@
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:basaki:data:Customer",
+  "properties" : {
+    "id" : {
+      "type" : "integer"
+    },
+    "firstName" : {
+      "type" : "string"
+    },
+    "lastName" : {
+      "type" : "string"
+    },
+    "address" : {
+      "type" : "object",
+      "id" : "urn:jsonschema:basaki:data:Address",
+      "properties" : {
+        "street" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "zipCode" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
